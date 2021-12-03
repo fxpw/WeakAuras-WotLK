@@ -3765,7 +3765,6 @@ Private.event_prototypes = {
     events = {
       ["events"] = {
         "SPELL_UPDATE_USABLE",
-        "ACTIONBAR_UPDATE_USABLE",
         "PLAYER_TARGET_CHANGED",
         "RUNE_POWER_UPDATE",
         "RUNE_TYPE_UPDATE",
