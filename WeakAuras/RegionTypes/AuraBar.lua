@@ -986,7 +986,11 @@ end
 local function setTexture(self, ...)
   local apply = self._SetTexture(self, ...)
   if self.isDesaturated ~= nil then
+<<<<<<< HEAD
     self:SetDesaturated(self.isDesaturated)
+=======
+    self:_SetDesaturated(self.isDesaturated)
+>>>>>>> cdd22d28a393f7cc4fc985ed812d7ddbf6c79b53
   end
   return apply
 end
