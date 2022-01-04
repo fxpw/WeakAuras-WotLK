@@ -174,6 +174,19 @@ local function AnchorSubRegion(self, subRegion, anchorType, selfPoint, anchorPoi
   end
 end
 
+local function setDesaturated(self, desaturated, ...)
+  self.isDesaturated = desaturated and 1 or 0
+  return self._SetDesaturated(self, desaturated, ...)
+end
+
+local function setTexture(self, ...)
+  local apply = self._SetTexture(self, ...)
+  if self.isDesaturated ~= nil then
+    self:SetDesaturated(self.isDesaturated)
+  end
+  return apply
+end
+
 local function create(parent, data)
   local font = "GameFontHighlight";
 
@@ -225,6 +238,11 @@ local function create(parent, data)
   end
   region.icon = icon;
   icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark");
+
+  icon._SetDesaturated = icon.SetDesaturated
+  icon.SetDesaturated = setDesaturated
+  icon._SetTexture = icon.SetTexture
+  icon.SetTexture = setTexture
 
   --This section creates a unique frame id for the cooldown frame so that it can be created with a global reference
   --The reason is so that WeakAuras cooldown frames can interact properly with OmniCC (i.e., put on its ignore list for timer overlays)
@@ -349,6 +367,8 @@ local function modify(parent, region, data)
   region.zoom = data.zoom;
   region:UpdateSize()
 
+  icon:SetDesaturated(data.desaturate);
+
   local tooltipType = Private.CanHaveTooltip(data);
   if(tooltipType and data.useTooltip) then
     if not region.tooltipFrame then
@@ -433,7 +453,6 @@ local function modify(parent, region, data)
 
     iconPath = iconPath or self.displayIcon or "Interface\\Icons\\INV_Misc_QuestionMark"
     icon:SetTexture(iconPath)
-    icon:SetDesaturated(data.desaturate)
   end
 
   function region:Scale(scalex, scaley)
