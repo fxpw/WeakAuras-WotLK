@@ -2953,6 +2953,7 @@ do
   end
 
   function WeakAuras.GetMHTenchInfo()
+    -- print(mh_exp, mh_dur, mh_name, mh_shortenedName, mh_icon, mh_charges)
     return mh_exp, mh_dur, mh_name, mh_shortenedName, mh_icon, mh_charges;
   end
 

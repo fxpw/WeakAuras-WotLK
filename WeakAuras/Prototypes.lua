@@ -932,7 +932,8 @@ Private.load_prototype = {
       type = "item",
       test = "IsEquippedItem(%s)",
       events = { "UNIT_INVENTORY_CHANGED", "PLAYER_EQUIPMENT_CHANGED"}
-    }
+    },
+    
   }
 };
 

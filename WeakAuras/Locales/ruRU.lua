@@ -1099,3 +1099,24 @@ L["Zone Name"] = "Название игровой зоны"
 L["Zoom"] = "Масштаб"
 L["Zul'Gurub"] = "Зул'Гуруб"
 
+
+
+
+
+
+
+--------------------ru locs TODO
+L["Spirit"] = "Дух"
+L["Melee Critical Rating"] = "Рейтинг крита ближнего боя"
+L["Ranged Critical Rating"] = "Рейтинг крита дальнего боя"
+L["Spell Critical Rating"] = "Рейтинг крита заклинаний"
+L["Mele Critical (%)"] = "Крит ближнего боя в %"
+L["Ranged Critical (%)"] = "Крит дальнего боя в %"
+L["Spell Critical (%)"] = "Крит заклинаний в %"
+L["Melee Haste Rating"] = "Рейтинг скорости ближнего боя"
+L["Ranged Haste Rating"] = "Рейтинг скорости дальнего боя"
+L["Spell Haste Rating"] = "Рейтинг скорости заклинаний"
+L["Block Rating"] = "Рейтинг блока"
+L["Combo Points"] = "Серия приемов"
+
+
