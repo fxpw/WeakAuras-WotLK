@@ -379,7 +379,7 @@ Supports multiple entries, separated by commas
 |cFF00CC00<= 0.8|r - сработает, если задействовано не более 80%% от общего числа единиц (4 из 5, 7 из 10)
 |cFF00CC00> 1/2|r - сработает, если задействовано больше половины единиц (5 из 5, 6 из 10)]=]
 	--[[Translation missing --]]
-	L["Group by Frame"] = "Group by Frame"
+	L["Group by Frame"] = "Группировать по Фреймам"
 	L["Group contains updates from Wago"] = "Группа содержит индикации, для которых есть обновление"
 	L["Group Description"] = "Описание группы"
 	L["Group Icon"] = "Иконка группы"

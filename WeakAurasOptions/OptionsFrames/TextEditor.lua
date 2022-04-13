@@ -145,6 +145,17 @@ function(allstates, event, ...)
     return true
 end]=]
   },
+  {
+    name = "Print events from CLEU",
+    snippet = [=[
+function(...)
+   local args = {...}
+   --event1,time2,subevent3,whoguid4,whoname5,whoflag6,targetguid7,targetname8,targetflag9,...
+   for k,v in pairs(args) do
+    --print(k,v)
+   end
+end]=]
+  },
 }
 
 local function ConstructTextEditor(frame)
