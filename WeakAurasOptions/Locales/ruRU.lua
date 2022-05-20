@@ -29,67 +29,67 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["%s - Condition Custom Code %s"] = "%s - Condition Custom Code %s"
 	--[[Translation missing --]]
-	L["%s - Custom Anchor"] = "%s - Custom Anchor"
+	L["%s - Custom Anchor"] = "%s - Свой якорь"
 	--[[Translation missing --]]
-	L["%s - Custom Grow"] = "%s - Custom Grow"
+	L["%s - Custom Grow"] = "%s - Свое свечение"
 	--[[Translation missing --]]
-	L["%s - Custom Sort"] = "%s - Custom Sort"
+	L["%s - Custom Sort"] = "%s - Своя сортировка"
 	--[[Translation missing --]]
-	L["%s - Custom Text"] = "%s - Custom Text"
+	L["%s - Custom Text"] = "%s - Свой текст"
 	L["%s - Finish"] = "%s - Конечная"
 	--[[Translation missing --]]
-	L["%s - Finish Action"] = "%s - Finish Action"
+	L["%s - Finish Action"] = "%s - Конец действия"
 	--[[Translation missing --]]
-	L["%s - Finish Custom Text"] = "%s - Finish Custom Text"
+	L["%s - Finish Custom Text"] = "%s - Свой текст"
 	--[[Translation missing --]]
-	L["%s - Init Action"] = "%s - Init Action"
+	L["%s - Init Action"] = "%s - Инициализировать действия"
 	L["%s - Main"] = "%s - Основная"
 	L["%s - Option #%i has the key %s. Please choose a different option key."] = "Ключ |cFFE6CC80%3$s|r уже используется в Параметре %2$i индикации %1$s. Пожалуйста, выберите другой ключ."
 	L["%s - Rotate Animation"] = "%s анимация вращения"
 	L["%s - Scale Animation"] = "%s анимация масштаба"
 	L["%s - Start"] = "%s - Начальная"
 	--[[Translation missing --]]
-	L["%s - Start Action"] = "%s - Start Action"
+	L["%s - Start Action"] = "%s - Начать действие"
 	--[[Translation missing --]]
-	L["%s - Start Custom Text"] = "%s - Start Custom Text"
+	L["%s - Start Custom Text"] = "%s - Начать свой текст"
 	L["%s - Translate Animation"] = "%s анимация перемещения"
 	L["%s - Trigger Logic"] = "%s - Комбинация триггеров"
 	L["%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"] = "%s %s; Линии %d; Частота %.3g; Длина %0.3g; Толщина %0.3g"
 	L["%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"] = "%s %s; Частицы %d; Частота %.3g; Масштаб %.3g"
 	--[[Translation missing --]]
-	L["%s %u. Overlay Function"] = "%s %u. Overlay Function"
+	L["%s %u. Overlay Function"] = "%s %u. Функций оверлея"
 	L["%s Alpha: %d%%"] = "%s Прозрачность %d%%"
 	--[[Translation missing --]]
 	L[ [=[%s auras will be added.
-]=] ] = [=[%s auras will be added.
+]=] ] = [=[%s ауры были добавлены.
 ]=]
 	--[[Translation missing --]]
 	L[ [=[%s auras will be removed.
-]=] ] = [=[%s auras will be removed.
+]=] ] = [=[%s ауры были удалены.
 ]=]
 	L["%s Color"] = "%s "
 	--[[Translation missing --]]
-	L["%s Custom Variables"] = "%s Custom Variables"
+	L["%s Custom Variables"] = "%s Свои вариации"
 	L["%s Default Alpha, Zoom, Icon Inset, Aspect Ratio"] = "%s Значения по умолчанию"
 	--[[Translation missing --]]
-	L["%s Duration Function"] = "%s Duration Function"
+	L["%s Duration Function"] = "%s Функция продолжительности"
 	--[[Translation missing --]]
-	L["%s Icon Function"] = "%s Icon Function"
+	L["%s Icon Function"] = "%s Функция иконки"
 	L["%s Inset: %d%%"] = "%s Вставка %d%%"
 	L["%s is not a valid SubEvent for COMBAT_LOG_EVENT_UNFILTERED"] = "%s не является допустимым внутренним событием COMBAT_LOG_EVENT_UNFILTERED"
 	L["%s Keep Aspect Ratio"] = "%s Сохранение пропорций изображения"
 	--[[Translation missing --]]
-	L["%s Name Function"] = "%s Name Function"
+	L["%s Name Function"] = "%s Функция имени"
 	--[[Translation missing --]]
-	L["%s Stacks Function"] = "%s Stacks Function"
+	L["%s Stacks Function"] = "%s Функция стаков"
 	L["%s Texture"] = "%s"
 	--[[Translation missing --]]
-	L["%s Texture Function"] = "%s Texture Function"
+	L["%s Texture Function"] = "%s Функция текстуры"
 	L["%s total auras"] = "Всего %s |4индикация:индикации:индикаций;"
 	--[[Translation missing --]]
-	L["%s Trigger Function"] = "%s Trigger Function"
+	L["%s Trigger Function"] = "%s Функция триггера"
 	--[[Translation missing --]]
-	L["%s Untrigger Function"] = "%s Untrigger Function"
+	L["%s Untrigger Function"] = "%s Функция детригерра"
 	L["%s Zoom: %d%%"] = "%s Увеличение %d%%"
 	L["%s, Border"] = "%s; Граница"
 	L["%s, Offset: %0.2f;%0.2f"] = "%s; Смещение (%.4g, %.4g)"
@@ -150,7 +150,8 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 Например: party4, raid7, arena3, boss2, nameplate6, target, focus, pet и др.]=]
 	L["Actions"] = "Действия"
 	--[[Translation missing --]]
-	L["Active Aura Filters and Info"] = "Active Aura Filters and Info"
+	L["Importing"] = "Импорт"
+	L["Active Aura Filters and Info"] = "Фильтр активной ауры и информации"
 	L["Add"] = "Добавить"
 	L["Add %s"] = "%s"
 	L["Add a new display"] = "Добавить новую индикацию"
@@ -910,4 +911,11 @@ Supports multiple entries, separated by commas
 	L["Zoom"] = "Масштаб"
 	L["Zoom In"] = "Увеличение"
 	L["Zoom Out"] = "Уменьшение"
-
+	L["Range in yards"] = "Расстояние в ярдах"
+	L["Export..."] = "Экспорт..."
+	L["Export debug table..."] = "Экспорт в таблицу..."
+	L["Fetch Tooltip Information"] = "Сверять информацию тултипа"
+	L["Fetch Raid Mark Information"] = "Сверять информацию рейдовой метки"
+	L["Spell Selection Filters"] = "Фильтры заклинания"
+	L["Affected Unit Filters and Info"] = "Дополнительные фильтры и информация"
+	L["Show and Clone Settings"] = "Показ и клонирование настроек"

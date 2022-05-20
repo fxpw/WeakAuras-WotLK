@@ -39,7 +39,7 @@ Animations.lua
 Conditions.lua
 
 # Trigger systems
-BuffTrigger.lua
+# BuffTrigger.lua
 BuffTrigger2.lua
 GenericTrigger.lua
 AuraWarnings.lua
