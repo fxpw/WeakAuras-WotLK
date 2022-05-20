@@ -121,24 +121,10 @@ local L = WeakAuras.L
 	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s"] = "|cFFFFCC00Атрибуты текста:|r |cFFE6CC80%s|r; Тень |c%sO|r цвета со смещением (%s, %s);%s%s"
 	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"] = "|cFFFFCC00Атрибуты текста:|r |cFFE6CC80%s|r; Тень |c%sO|r цвета со смещением (%s, %s);%s%s%s"
 	L["|cFFffcc00Format Options|r"] = "|cFFFFCC00Параметры форматирования|r"
+	L["Invert the direction of progress"] = "Инверсия направления прогресса"
 	--[[Translation missing --]]
-	L[ [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
-• |cffffff00Multi-target|r attempts to use the Combat Log events, rather than unitID, to track affected units.
-|cffff0000Note|r: Without a direct relationship to actual unitIDs, results may vary.
-
-|cffffff00*|r Yellow Unit settings can match multiple units and will default to being active even while no affected units are found without a Unit Count or Match Count setting.]=] ] = [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
-• |cffffff00Multi-target|r attempts to use the Combat Log events, rather than unitID, to track affected units.
-|cffff0000Note|r: Without a direct relationship to actual unitIDs, results may vary.
-
-|cffffff00*|r Yellow Unit settings can match multiple units and will default to being active even while no affected units are found without a Unit Count or Match Count setting.]=]
+	L["• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.\n• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.\n|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.\n• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.\n• |cffffff00Smart Group|r adjusts to your current group type, matching just the \"player\" when solo, \"party\" units (including \"player\") in a party or \"raid\" units in a raid.\n\n|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura."] =  " |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, и |cff00ff00Pet|r unitIDs.\n|cff00ff00Специальный ID|r позволяет сканировать более точно.\n|cffff0000Note|r: Игра может не позволять сканировать некоторые UnitID.\n|cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r могут содержать дополнительныеunitIDs.\n|cffffff00Smart Group|r Сканирует от вашего текушего типа группы, 'player' соло, пати с 'player' когда в пати или 'raid' когда вы в рейде.\n\n|cffffff00*|r Настройки желтого юнита будут создавать клоны для каждого соответствующего юнита, пока этот триггер предоставляет динамическую информацию для ауры."
+	L["10 Man Raid"] = "Рейд на 10 игроков"
 	L["1 Match"] = "1 cовпадение"
 	L["A 20x20 pixels icon"] = "Иконка 20х20 пикселей"
 	L["A 32x32 pixels icon"] = "Иконка 32х32 пикселей"
@@ -436,12 +422,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Filter by Group Role"] = "Фильтр по роли"
 	L["Filter by Nameplate Type"] = "Тип индикатора здоровья"
 	L["Filter by Raid Role"] = "Фильтр по роли в рейде"
-	L[ [=[Filter formats: 'Name', 'Name-Realm', '-Realm'.
-
-Supports multiple entries, separated by commas
-]=] ] = [=[Формат записи: Имя, Имя-Игровой мир, -Игровой мир.
-
-Можно указать несколько значений, разделенных запятыми.]=]
+	L[" Filter formats: 'Name', 'Name-Realm', '-Realm'. \n\nSupports multiple entries, separated by commas\nCan use \\ to escape -."] = [=[Формат записи: Имя, Имя-Игровой мир, -Игровой мир. \n\nМожно указать несколько значений, разделенных запятыми.]=]
 	L["Find Auras"] = "Найти индикации"
 	L["Finish"] = "Конечная"
 	L["Fire Orb"] = "Огненный шар"
@@ -930,3 +911,5 @@ Supports multiple entries, separated by commas
 	L["Is Unit"] = "Если юнит"
 	L["Enable Swipe"] = "Включить переключение"
 	L["Enable the \"Swipe\" radial overlay"] = "Включить переключение радиального наложения"
+	L["Filter to only dispellable de/buffs of the given type(s)"] = "Фильтровать только то что можно диспельнуть по типу"
+	L["Filter based on the spell Name string."] = "Фильтр по имени заклинания"

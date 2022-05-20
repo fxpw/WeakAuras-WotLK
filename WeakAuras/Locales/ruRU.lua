@@ -8,10 +8,7 @@ local L = WeakAuras.L
 L["   • %d auras added"] = "   • %d |4индикация добавлена:индикации добавлены:индикаций добавлено;"
 L["   • %d auras deleted"] = "   • %d |4индикация удалена:индикации удалены:индикаций удалено;"
 L["   • %d auras modified"] = "   • %d |4индикация изменена:индикации изменены:индикаций изменено;"
-L[ [=[ Filter formats: 'Name', 'Name-Realm', '-Realm'. 
-
-Supports multiple entries, separated by commas
-]=] ] = [=[Формат записи: Имя, Имя-Игровой мир, -Игровой мир.
+L[" Filter formats: 'Name', 'Name-Realm', '-Realm'. \n\nSupports multiple entries, separated by commas\nCan use \\ to escape -."] = [=[Формат записи: Имя, Имя-Игровой мир, -Игровой мир.
 
 Можно указать несколько значений, разделенных запятыми.]=]
 L[ [=[
@@ -19,6 +16,8 @@ L[ [=[
 Supports multiple entries, separated by commas]=] ] = [=[
 
 Можно указать несколько значений, разделенных запятыми.]=]
+L["This is a modified version of your aura, |cff9900FF%s.|r"] = "Это модифицированная версия вашей ауры, |cff9900FF%s.|r"
+L["Update"] = "Обновить"
 L["%s - %i. Trigger"] = "%s - %i. Триггер"
 L["%s - Alpha Animation"] = "%s - Анимация прозрачности"
 L["%s - Color Animation"] = "%s - Анимация цвета"
@@ -64,19 +63,8 @@ L["|cFFFF0000Not|r Player Name/Realm"] = "Имя / Игровой мир игр�
 L["|cFFffcc00Extra Options:|r %s"] = "|cFFFFCC00Дополнительные параметры:|r %s"
 L["|cFFffcc00Extra Options:|r None"] = "|cFFFFCC00Дополнительные параметры:|r нет"
 --[[Translation missing --]]
-L[ [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
+L["• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.\n• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.\n|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.\n• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.\n• |cffffff00Smart Group|r adjusts to your current group type, matching just the \"player\" when solo, \"party\" units (including \"player\") in a party or \"raid\" units in a raid.\n\n|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura."]=  " |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, и |cff00ff00Pet|r unitIDs.\n|cff00ff00Специальный ID|r позволяет сканировать более точно.\n|cffff0000Note|r: Игра может не позволять сканировать некоторые UnitID.\n|cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r могут содержать дополнительныеunitIDs.\n|cffffff00Smart Group|r Сканирует от вашего текушего типа группы, 'player' соло, пати с 'player' когда в пати или 'raid' когда вы в рейде.\n\n|cffffff00*|r Настройки желтого юнита будут создавать клоны для каждого соответствующего юнита, пока этот триггер предоставляет динамическую информацию для ауры."
 
-|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura.]=] ] = [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
-
-|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura.]=]
 L["10 Man Raid"] = "Рейд на 10 игроков"
 --[[Translation missing --]]
 L["10 Player Raid"] = "10 Player Raid"
@@ -1220,6 +1208,8 @@ L["Blood Runes"] = "Руны крови"
 L["Unholy Runes"] = "Руны нечестивости"
 L["Frost Runes"] = "Руны льда"
 L["Enchant Name"] = "Имя зачарования"
-
+L["PvP Mode Active"] = "PVP режим вкл"
+L["Show \"Edge\""] = "Показать кромку"
+L["Enable \"Edge\" part of the overlay"] = 'Показать кромку - часть оверлея'
 
 
