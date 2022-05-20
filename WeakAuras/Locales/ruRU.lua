@@ -479,7 +479,7 @@ L["Grobbulus"] = "Гроббулус"
 L["Group"] = "Группа"
 L["Group Arrangement"] = "Порядок и позиции индикаций в группе"
 --[[Translation missing --]]
-L["Group Type"] = "Group Type"
+L["Group Type"] = "Тип группы"
 L["Grow"] = "Рост"
 L["GTFO Alert"] = "Предупреждение GTFO"
 L["Guardian"] = "Страж"
