@@ -103,8 +103,7 @@ local L = WeakAuras.L
 	L["View custom code"] = "Показать код"
 	L[", "] = ", "
 	L["|c%02x%02x%02x%02xCustom Color|r"] = "Свечение |c%02x%02x%02x%02xO|r цвета"
-	--[[Translation missing --]]
-	L["|cff999999Triggers tracking multiple units will default to being active even while no affected units are found without a Unit Count or Match Count setting applied.|r"] = "|cff999999Triggers tracking multiple units will default to being active even while no affected units are found without a Unit Count or Match Count setting applied.|r"
+	L["|cff999999Triggers tracking multiple units will default to being active even while no affected units are found without a Unit Count or Match Count setting applied.|r"] = "|cff999999Триггеры, отслеживающие несколько единиц, по умолчанию будут активны, даже если затронутые единицы не будут найдены без примененных настроек количества единиц или совпадений.|r"
 	L["|cFFE0E000Note:|r This sets the description only on '%s'"] = "|cFFFFCC00Примечание.|r Задает описание только для индикации %s"
 	L["|cFFE0E000Note:|r This sets the URL on all selected auras"] = "|cFFFFCC00Примечание.|r Устанавливает URL-адрес для выбранных индикаций"
 	L["|cFFE0E000Note:|r This sets the URL on this group and all its members."] = "|cFFFFCC00Примечание.|r Устанавливает URL-адрес для этой группы и всех ее индикаций"
@@ -122,7 +121,6 @@ local L = WeakAuras.L
 	L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"] = "|cFFFFCC00Атрибуты текста:|r |cFFE6CC80%s|r; Тень |c%sO|r цвета со смещением (%s, %s);%s%s%s"
 	L["|cFFffcc00Format Options|r"] = "|cFFFFCC00Параметры форматирования|r"
 	L["Invert the direction of progress"] = "Инверсия направления прогресса"
-	--[[Translation missing --]]
 	L["• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.\n• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.\n|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.\n• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.\n• |cffffff00Smart Group|r adjusts to your current group type, matching just the \"player\" when solo, \"party\" units (including \"player\") in a party or \"raid\" units in a raid.\n\n|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura."] =  " |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, и |cff00ff00Pet|r unitIDs.\n|cff00ff00Специальный ID|r позволяет сканировать более точно.\n|cffff0000Note|r: Игра может не позволять сканировать некоторые UnitID.\n|cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r могут содержать дополнительныеunitIDs.\n|cffffff00Smart Group|r Сканирует от вашего текушего типа группы, 'player' соло, пати с 'player' когда в пати или 'raid' когда вы в рейде.\n\n|cffffff00*|r Настройки желтого юнита будут создавать клоны для каждого соответствующего юнита, пока этот триггер предоставляет динамическую информацию для ауры."
 	L["10 Man Raid"] = "Рейд на 10 игроков"
 	L["1 Match"] = "1 cовпадение"
@@ -913,3 +911,5 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Enable the \"Swipe\" radial overlay"] = "Включить переключение радиального наложения"
 	L["Filter to only dispellable de/buffs of the given type(s)"] = "Фильтровать только то что можно диспельнуть по типу"
 	L["Filter based on the spell Name string."] = "Фильтр по имени заклинания"
+	L["Filter by Unit Name"] = "Фильтрация по имени юнита"
+	L["Death Rune"] = "Руна смерти"

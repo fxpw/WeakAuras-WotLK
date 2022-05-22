@@ -62,20 +62,16 @@ L["|cFFFF0000Not|r Item Bonus Id Equipped"] = "ID бонуса надетого 
 L["|cFFFF0000Not|r Player Name/Realm"] = "Имя / Игровой мир игрока |cFFFF0000НЕ|r"
 L["|cFFffcc00Extra Options:|r %s"] = "|cFFFFCC00Дополнительные параметры:|r %s"
 L["|cFFffcc00Extra Options:|r None"] = "|cFFFFCC00Дополнительные параметры:|r нет"
---[[Translation missing --]]
 L["• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.\n• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.\n|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.\n• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.\n• |cffffff00Smart Group|r adjusts to your current group type, matching just the \"player\" when solo, \"party\" units (including \"player\") in a party or \"raid\" units in a raid.\n\n|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura."]=  " |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, и |cff00ff00Pet|r unitIDs.\n|cff00ff00Специальный ID|r позволяет сканировать более точно.\n|cffff0000Note|r: Игра может не позволять сканировать некоторые UnitID.\n|cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r могут содержать дополнительныеunitIDs.\n|cffffff00Smart Group|r Сканирует от вашего текушего типа группы, 'player' соло, пати с 'player' когда в пати или 'raid' когда вы в рейде.\n\n|cffffff00*|r Настройки желтого юнита будут создавать клоны для каждого соответствующего юнита, пока этот триггер предоставляет динамическую информацию для ауры."
-
+  L["Include Death Runes"] = "Включить руну смерти"
 L["10 Man Raid"] = "Рейд на 10 игроков"
---[[Translation missing --]]
-L["10 Player Raid"] = "10 Player Raid"
+L["10 Player Raid"] = "Рейд на 10 игроков "
 L["10 Player Raid (Heroic)"] = "Рейд на 10 игроков (героический)"
 L["10 Player Raid (Normal)"] = "Рейд на 10 игроков (обычный)"
 L["20 Man Raid"] = "Рейд на 20 игроков"
---[[Translation missing --]]
-L["20 Player Raid"] = "20 Player Raid"
+L["20 Player Raid"] = "Рейд на 25 игроков"
 L["25 Man Raid"] = "Рейд на 25 игроков"
---[[Translation missing --]]
-L["25 Player Raid"] = "25 Player Raid"
+L["25 Player Raid"] = "Рейд на 25 игроков"
 L["25 Player Raid (Heroic)"] = "Рейд на 25 игроков (героический)"
 L["25 Player Raid (Normal)"] = "Рейд на 25 игроков (обычный)"
 L["40 Man Raid"] = "Рейд на 40 игроков"
@@ -97,8 +93,7 @@ L["Additional Trigger Replacements"] = [=[Дополнительные шабл�
 ]=]
 L["Affected"] = "Задействованные"
 L["Affected Unit Count"] = "Кол-во задейств-х единиц"
---[[Translation missing --]]
-L["Afk"] = "Afk"
+L["Afk"] = "АФК"
 L["Aggro"] = "Агро"
 L["Agility"] = "Ловкость"
 L["Ahn'Qiraj"] = "Ан'Кираж"
@@ -333,8 +328,7 @@ L["Dispel"] = "Рассеивание"
 L["Dispel Failed"] = "Рассеивание не удалось"
 L["Display"] = "Отображение"
 L["Distance"] = "Расстояние"
---[[Translation missing --]]
-L["Do Not Disturb"] = "Do Not Disturb"
+L["Do Not Disturb"] = "Не беспокоить (DND)"
 L["Dodge"] = "Уклонение"
 L["Dodge (%)"] = "Уклонение"
 L["Dodge Rating"] = "Показатель уклонения"
@@ -342,7 +336,6 @@ L["Done"] = "Выполнено"
 L["Down"] = "Вниз"
 L["Down, then Left"] = "Вниз, затем влево"
 L["Down, then Right"] = "Вниз, затем вправо"
---[[Translation missing --]]
 L["Dragonflight"] = "Dragonflight"
 L["Drain"] = "Вытягивание"
 L["Dropdown Menu"] = "Выпадающее меню"
@@ -466,7 +459,6 @@ L["Grid"] = "Сетка"
 L["Grobbulus"] = "Гроббулус"
 L["Group"] = "Группа"
 L["Group Arrangement"] = "Порядок и позиции индикаций в группе"
---[[Translation missing --]]
 L["Group Type"] = "Тип группы"
 L["Grow"] = "Рост"
 L["GTFO Alert"] = "Предупреждение GTFO"
@@ -586,7 +578,6 @@ L["Legacy Aura (disabled):"] = "Аура (устаревший; отключен
 L["Legacy Looking for Raid"] = "Поиск рейда (до патча 5.4)"
 L["Legacy RGB Gradient"] = "Градиент RGB"
 L["Legacy RGB Gradient Pulse"] = "Градиентная пульсация RGB"
---[[Translation missing --]]
 L["Legion"] = "Legion"
 L["Length"] = "Длина"
 L["Level"] = "Уровень"
@@ -640,7 +631,6 @@ L["Miss"] = "Промах"
 L["Miss Type"] = "Тип промаха"
 L["Missed"] = "Промах"
 L["Missing"] = "Эффект отсутствует"
---[[Translation missing --]]
 L["Mists of Pandaria"] = "Mists of Pandaria"
 L["Moam"] = "Моам"
 L["Model"] = "Модель"
@@ -685,11 +675,9 @@ L["No Profiling information saved."] = "Нет данных профилиров
 L["None"] = "Нет"
 L["Non-player Character"] = "Неигровой персонаж (NPC)"
 L["Normal"] = "Обычный"
---[[Translation missing --]]
-L["Normal Party"] = "Normal Party"
+L["Normal Party"] = "Нормальная группа"
 L["Not in Group"] = "Не в группе"
---[[Translation missing --]]
-L["Not in Smart Group"] = "Not in Smart Group"
+L["Not in Smart Group"] = "Не в умной группе"
 L["Not on Cooldown"] = "Не перезаряжается"
 L["Not On Threat Table"] = "Не в списке угроз"
 L["Note, that cross realm transmission is possible if you are on the same group"] = [=[Передача данных между игровыми мирами возможна,
@@ -1192,7 +1180,7 @@ L[
 
 - Unit Frames: attach to unit frame buttons per unit.
 - Custom Frames: choose which frame each region should be anchored to.]]
-] = 
+] =
 [[Групировать и привязывать каждую ауру к фрейму
 
 - Рамки юнитов: Привязать к юнит фреймам.
