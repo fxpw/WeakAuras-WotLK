@@ -1906,7 +1906,11 @@ Private.group_types = {
   group = L["In Party"],
   raid = L["In Raid"]
 }
-
+Private.raid_role_type = {
+  raidLeader = L["Is Raid Leader"],
+  raidOfficer = L["Is Officer"],
+  raider = L["Not a raid officer or leader"]
+}
 Private.difficulty_types = {
   none = L["None"],
   normal = PLAYER_DIFFICULTY1,

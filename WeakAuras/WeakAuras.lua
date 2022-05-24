@@ -1251,7 +1251,7 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
 
   local size, difficulty, instanceType = GetInstanceTypeAndSize()
   local group = WeakAuras.GroupType()
-
+  local raidRole = WeakAuras.RaidRole()
   local changed = 0;
   local shouldBeLoaded, couldBeLoaded;
   local parentsToCheck = {}
@@ -1263,8 +1263,8 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
     if (data and not data.controlledChildren) then
       local loadFunc = loadFuncs[id];
       local loadOpt = loadFuncsForOptions[id];
-      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty);
-      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty);
+      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty,raidRole);
+      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty,raidRole);
 
       if(shouldBeLoaded and not loaded[id]) then
         changed = changed + 1;
@@ -4757,6 +4757,17 @@ function WeakAuras.GetTriggerCategoryFor(triggerType)
   return prototype and prototype.type
 end
 
+function  WeakAuras.IsRaidLeader()
+  return IsRaidLeader() and "raidLeader" or nil
+end
+
+function  WeakAuras.IsRaidOfficer()
+  return IsRaidOfficer() and "raidOfficer" or nil
+end
+
+function WeakAuras.RaidRole()
+  return WeakAuras.IsRaidLeader() ~= nil and "raidLeader" or WeakAuras.IsRaidOfficer() ~= nil  and "raidOfficer" or "raider"
+end
 do
   local function shouldInclude(data, includeGroups, includeLeafs)
     if data.controlledChildren then

@@ -941,6 +941,15 @@ Private.load_prototype = {
       events = {"PLAYER_DIFFICULTY_CHANGED", "ZONE_CHANGED", "ZONE_CHANGED_INDOORS", "ZONE_CHANGED_NEW_AREA"}
     },
     {
+      name = "raidRole",
+      display = L["raidRole"],
+      type = "multiselect",
+      values = "raid_role_type",
+      init = "arg",
+      width = WeakAuras.normalWidth,
+      events = {"PARTY_MEMBERS_CHANGED","RAID_ROSTER_UPDATE"}
+    },
+    {
       name = "itemequiped",
       display = L["Item Equipped"],
       type = "item",

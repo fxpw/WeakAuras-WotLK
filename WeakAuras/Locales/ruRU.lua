@@ -512,7 +512,6 @@ L["In Combat"] = "В бою"
 L["In Encounter"] = "В сражении с боссом"
 L["In Group"] = "В группе"
 L["In Pet Battle"] = "В битве питомцев"
-L["In Raid"] = "В рейде"
 L["In Vehicle"] = "На транспорте"
 L["Include Bank"] = "Включая банк"
 L["Include Charges"] = "Включая заряды"
@@ -1200,4 +1199,10 @@ L["PvP Mode Active"] = "PVP режим вкл"
 L["Show \"Edge\""] = "Показать кромку"
 L["Enable \"Edge\" part of the overlay"] = 'Показать кромку - часть оверлея'
 
+L["In Party"] = "В группе"
+L["In Raid"] = "В рейде"
 
+L["raidRole"] = "Роль в рейде"
+L["Is Raid Leader"] = "Рейд лидер"
+L["Is Officer"] = "Рейд помощник"
+L["Not a raid officer or leader"] = "Не офицер и не рейд лидер"
