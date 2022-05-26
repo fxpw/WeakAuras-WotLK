@@ -4611,6 +4611,8 @@ do
   trackableUnits["pet"] = true
   trackableUnits["vehicle"] = true
 
+  trackableUnits["targettarget"] = true
+
   for i = 1, 5 do
     trackableUnits["arena" .. i] = true
     trackableUnits["arenapet" .. i] = true

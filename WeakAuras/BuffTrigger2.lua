@@ -1685,6 +1685,11 @@ local function EventHandler(frame, event, arg1, arg2, ...)
     ScanGroupUnit(time, matchDataChanged, nil, "target")
     if not UnitExistsFixed("target") then
       tinsert(unitsToRemove, "target")
+      
+    end
+    ScanGroupUnit(time, matchDataChanged, nil, "targettarget")
+    if not UnitExistsFixed("targettarget") then
+      tinsert(unitsToRemove, "targettarget")
     end
   elseif event == "PLAYER_FOCUS_CHANGED" then
     ScanGroupUnit(time, matchDataChanged, nil, "focus")
