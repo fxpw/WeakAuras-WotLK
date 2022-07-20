@@ -776,7 +776,12 @@ function Private.PostAddCompanion()
   do
     for i = 1, C_Talent.GetNumTalentGroups() do
       local name, text = C_Talent.GetTalentGroupSettings(i)
-      Private.AllSpecs["Spec"..i] = name .. " ".."|T"..text..":20:20:0:0:64:64:4:55:4:55|t"
+      if name and text then
+        Private.AllSpecs["Spec"..i] = name .. " ".."|T"..text..":20:20:0:0:64:64:4:55:4:55|t"
+      else
+        Private.AllSpecs["Spec"..i] = "Spec "..i
+      end
+      -- print(Private.AllSpecs[i])
     end
   end
 end
