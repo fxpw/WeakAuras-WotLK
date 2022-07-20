@@ -773,6 +773,12 @@ function Private.PostAddCompanion()
   if Private.CompanionData.stash and next(Private.CompanionData.stash) then
     WeakAuras.prettyPrint(L["You have new auras ready to be installed!"])
   end
+  do
+    for i = 1, C_Talent.GetNumTalentGroups() do
+      local name, text = C_Talent.GetTalentGroupSettings(i)
+      Private.AllSpecs["Spec"..i] = name .. " ".."|T"..text..":20:20:0:0:64:64:4:55:4:55|t"
+    end
+  end
 end
 
 function Private.CountWagoUpdates()
@@ -1249,9 +1255,11 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
   local vehicle = UnitInVehicle("player") or UnitOnTaxi("player")
   local vehicleUi = UnitHasVehicleUI("player")
 
-  local size, difficulty, instanceType = GetInstanceTypeAndSize()
+  local size, difficulty, _ = GetInstanceTypeAndSize()
   local group = WeakAuras.GroupType()
   local raidRole = WeakAuras.RaidRole()
+  local race = WeakAuras.GetUnitRace()
+  local spec = WeakAuras.GetCurrentSpec()
   local changed = 0;
   local shouldBeLoaded, couldBeLoaded;
   local parentsToCheck = {}
@@ -1263,8 +1271,8 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
     if (data and not data.controlledChildren) then
       local loadFunc = loadFuncs[id];
       local loadOpt = loadFuncsForOptions[id];
-      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty,raidRole);
-      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, faction, playerLevel, zone, zoneId, size, difficulty,raidRole);
+      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
+      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
 
       if(shouldBeLoaded and not loaded[id]) then
         changed = changed + 1;
@@ -3278,7 +3286,7 @@ function Private.FixGroupChildrenOrderForGroup(data)
   if data.parent == nil then
     for child in Private.TraverseAll(data) do
       SetFrameLevel(child.id, frameLevel);
-      frameLevel = frameLevel + 4;
+      frameLevel = frameLevel + 0;
     end
   end
 end
@@ -4769,6 +4777,12 @@ end
 
 function WeakAuras.RaidRole()
   return WeakAuras.IsRaidLeader() ~= nil and "raidLeader" or WeakAuras.IsRaidOfficer() ~= nil  and "raidOfficer" or "raider"
+end
+function WeakAuras.GetUnitRace()
+  return select(2,UnitRace("player"))
+end
+function WeakAuras.GetCurrentSpec()
+  return "Spec"..C_Talent.GetSpecInfoCache().activeTalentGroup
 end
 do
   local function shouldInclude(data, includeGroups, includeLeafs)

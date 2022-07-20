@@ -6,6 +6,7 @@ on:
       - '.github/workflows/**.yml'
       - '**.lua'
 
+
 jobs:
   lint:
     runs-on: ubuntu-latest

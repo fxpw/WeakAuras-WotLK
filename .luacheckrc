@@ -18,6 +18,7 @@ exclude_files = {
 	"WeakAuras/Libs/",
 	"WeakAuras/Locales/",
 	".luacheckrc"
+
 }
 
 ignore = {

@@ -852,6 +852,15 @@ Private.load_prototype = {
       init = "arg"
     },
     {
+      name = "race",
+      display = L["Player Race"],
+      type = "multiselect",
+      values = "race_type",
+      init = "arg",
+      width = WeakAuras.normalWidth,
+      events = {"PARTY_MEMBERS_CHANGED","RAID_ROSTER_UPDATE"}
+    },
+    {
       name = "talent",
       display = L["Talent"],
       type = "multiselect",
@@ -888,6 +897,15 @@ Private.load_prototype = {
       test = "WeakAuras.IsSpellKnownForLoad(%s, %s)",
       events = {"SPELLS_CHANGED"},
       showExactOption = true
+    },
+    {
+      name = "spec",
+      display = L["Player Spec"],
+      type = "multiselect",
+      values = "AllSpecs",
+      init = "arg",
+      width = WeakAuras.normalWidth,
+      events = {"PLAYER_TALENT_UPDATE"}
     },
     {
       name = "faction",

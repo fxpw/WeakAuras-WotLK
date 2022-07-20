@@ -1911,6 +1911,32 @@ Private.raid_role_type = {
   raidOfficer = L["Is Officer"],
   raider = L["Not a raid officer or leader"]
 }
+Private.race_type = {
+  Human = L["Human"],
+  Dworf = L["Dworf"],
+  Gnome = L["Gnome"],
+  Drenei = L["Drenei"],
+  Vorgen = L["Vorgen"],
+  NightElf = L["NightElf"],
+  Queldo = L["Queldo"],
+  VoidElf = L["VoidElf"],
+  DarkIronDwarf = L["DarkIronDwarf"],
+  Lightforged = L["Lightforged"],
+  Pandaren = L["Pandaren"],
+  Vulpera = L["Vulpera"],
+  Orc = L["Orc"],
+  Scourge = L["Scourge"],
+  Tauren = L["Tauren"],
+  Troll = L["Troll"],
+  Goblin = L["Goblin"],
+  Naga = L["Naga"],
+  BloodElf = L["BloodElf"],
+  NightBorn = L["NightBorn"],
+  Eredar = L["Eredar"],
+  ZandalariTroll = L["ZandalariTroll"],
+}
+Private.AllSpecs = {}
+
 Private.difficulty_types = {
   none = L["None"],
   normal = PLAYER_DIFFICULTY1,
