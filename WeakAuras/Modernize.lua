@@ -1182,6 +1182,11 @@ function Private.Modernize(data)
       data.actions.finish.message_dest_isunit = true
     end
   end
+  -- in 2022 for sirus
+  if data.internalVersion < 53 then
+    data.load.use_spec = nil
+    data.load.use_race = nil
 
+  end
   data.internalVersion = max(data.internalVersion or 0, WeakAuras.InternalVersion());
 end
