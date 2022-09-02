@@ -1913,10 +1913,10 @@ Private.raid_role_type = {
 }
 Private.race_type = {
   Human = L["Human"],
-  Dworf = L["Dworf"],
+  Dwarf = L["Dworf"],
   Gnome = L["Gnome"],
-  Drenei = L["Drenei"],
-  Vorgen = L["Vorgen"],
+  Draenei = L["Drenei"],
+  Worgen = L["Vorgen"],
   NightElf = L["NightElf"],
   Queldo = L["Queldo"],
   VoidElf = L["VoidElf"],
