@@ -1931,7 +1931,7 @@ Private.race_type = {
   Goblin = L["Goblin"],
   Naga = L["Naga"],
   BloodElf = L["BloodElf"],
-  NightBorn = L["NightBorn"],
+  Nightborne = L["NightBorn"],
   Eredar = L["Eredar"],
   ZandalariTroll = L["ZandalariTroll"],
 }
