@@ -19,7 +19,8 @@ if WeakAuras.IsClassic() then
   end
 else
   RestrictedChannelCheck = function(data)
-    return data.message_type == "SAY" or data.message_type == "YELL" or data.message_type == "SMARTRAID"
+    -- return data.message_type == "SAY" or data.message_type == "YELL" or data.message_type == "RAID"
+    return false
   end
 end
 
