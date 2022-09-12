@@ -831,6 +831,7 @@ end
 Private.faction_group = {
   Alliance = L["Alliance"],
   Horde = L["Horde"],
+  Renegade = L["Renegade"],
   Neutral = L["Neutral"]
 }
 
