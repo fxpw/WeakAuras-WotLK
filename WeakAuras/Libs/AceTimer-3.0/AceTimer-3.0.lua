@@ -16,7 +16,7 @@
 -- @name AceTimer-3.0
 -- @release $Id$
 
-local MAJOR, MINOR = "AceTimer-3.0", 1017 -- Bump minor on changes
+local MAJOR, MINOR = "AceTimer-3.0-WA", 1017 -- Bump minor on changes
 local AceTimer, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not AceTimer then return end -- No upgrade needed

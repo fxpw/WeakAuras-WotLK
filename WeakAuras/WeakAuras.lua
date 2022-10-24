@@ -26,7 +26,7 @@ local versionString = WeakAuras.versionString
 local prettyPrint = WeakAuras.prettyPrint
 
 WeakAurasTimers = setmetatable({}, {__tostring=function() return "WeakAuras" end})
-LibStub("AceTimer-3.0"):Embed(WeakAurasTimers)
+LibStub("AceTimer-3.0-WA"):Embed(WeakAurasTimers)
 
 -- The worlds simplest callback system
 -- That supports 1:N, but no deregistration and breaks if registrating in a callback

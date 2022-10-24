@@ -11,7 +11,7 @@ If not, see http://creativecommons.org/publicdomain/zero/1.0/.
 local embedder, namespace = ...
 local addonName, Archivist = "Archivist", {}
 -- Our only library!
-local LibDeflate = LibStub("LibDeflate")
+local LibDeflate = LibStub("LibDeflate-WA")
 
 do -- boilerplate & static values
 	Archivist.buildDate = "@build-time@"

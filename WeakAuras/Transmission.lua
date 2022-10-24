@@ -197,11 +197,11 @@ ChatFrame_AddMessageEventFilter("CHAT_MSG_BN_WHISPER_INFORM", filterFunc)
 ChatFrame_AddMessageEventFilter("CHAT_MSG_BATTLEGROUND", filterFunc)
 ChatFrame_AddMessageEventFilter("CHAT_MSG_BATTLEGROUND_LEADER", filterFunc)
 
-local Compresser = LibStub:GetLibrary("LibCompress")
-local LibDeflate = LibStub:GetLibrary("LibDeflate")
-local Serializer = LibStub:GetLibrary("AceSerializer-3.0")
-local LibSerialize = LibStub("LibSerialize")
-local Comm = LibStub:GetLibrary("AceComm-3.0")
+local Compresser = LibStub:GetLibrary("LibCompress-WA")
+local LibDeflate = LibStub:GetLibrary("LibDeflate-WA")
+local Serializer = LibStub:GetLibrary("AceSerializer-3.0-WA")
+local LibSerialize = LibStub("LibSerialize-WA")
+local Comm = LibStub:GetLibrary("AceComm-3.0-WA")
 local configForDeflate = {level = 9} -- the biggest bottleneck by far is in transmission and printing; so use maximal compression
 local configForLS = {
   errorOnUnserializableType =  false
@@ -436,7 +436,7 @@ function ShowTooltip(lines)
   ItemRefTooltip:Show()
 end
 
-local delayedImport = CreateFrame("FRAME")
+local delayedImport = CreateFrame("Frame")
 
 local function ImportNow(data, children, target, sender)
   if InCombatLockdown() then

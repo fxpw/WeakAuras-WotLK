@@ -83,7 +83,7 @@ do
 
 	-- Register in the World of Warcraft library "LibStub" if detected.
 	if LibStub then
-		local MAJOR, MINOR = "LibDeflate", -1
+		local MAJOR, MINOR = "LibDeflate-WA", -1
 		-- When MAJOR is changed, I should name it as LibDeflate2
 		local lib, minor = LibStub:GetLibrary(MAJOR, true)
 		if lib and minor and minor >= MINOR then -- No need to update.
