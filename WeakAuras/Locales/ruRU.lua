@@ -1210,7 +1210,7 @@ L["Not a raid officer or leader"] = "Не офицер и не рейд лиде
 
 L["Player Race"] = "Раса игрока"
 L["Human"] = "Человек"
-L["Dworf"] = "Дворф"
+L["Dwarf"] = "Дворф"
 L["Gnome"] = "Гном"
 L["Drenei"] = "Дреней"
 L["Vorgen"] = "Ворген"
@@ -1231,7 +1231,9 @@ L["BloodElf"] = "Син'Дорей"
 L["NightBorn"] = "Ночнорожденный"
 L["Eredar"] = "Эредар"
 L["ZandalariTroll"] = "Зандалар"
+L["Dracthyr"] = "Драктир"
 
 L["Player Spec"] = "Текущия специализация"
 
-
+L["This aura plays a sound via an action."] = "Эта аура проигрывает звук при действии"
+L["This aura plays a sound via a condition."] = "Эта аура проигрывает звук при условии"

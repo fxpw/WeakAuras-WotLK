@@ -1914,7 +1914,7 @@ Private.raid_role_type = {
 }
 Private.race_type = {
   Human = L["Human"],
-  Dwarf = L["Dworf"],
+  Dwarf = L["Dwarf"],
   Gnome = L["Gnome"],
   Draenei = L["Drenei"],
   Worgen = L["Vorgen"],
@@ -1935,6 +1935,7 @@ Private.race_type = {
   Nightborne = L["NightBorn"],
   Eredar = L["Eredar"],
   ZandalariTroll = L["ZandalariTroll"],
+  Dracthyr = L["Dracthyr"],
 }
 Private.AllSpecs = {}
 
