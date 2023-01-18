@@ -144,7 +144,11 @@ local blockedFunctions = {
   GuildUninvite = true,
   securecall = true,
   DeleteCursorItem = true,
-  ChatEdit_SendText = true
+  ChatEdit_SendText = true,
+  CastSpellByName = true,
+  CastSpell = true,
+  CastSpellByID = true,
+
 }
 
 local blockedTables = {
