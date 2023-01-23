@@ -60,6 +60,11 @@ WeakAuras.StopMotion.texture_types.Warrior = {
   [txtPath.."Warrior\\over_90"] = "Overpower",
   [txtPath.."Warrior\\execute_90"] = "Execute",
   [txtPath.."Warrior\\execute2_90"] = "Execute 2",
+  [txtPath.."Warrior\\charge_90"] = "Charge",
+  [txtPath.."Warrior\\slice_90"] = "Slice",
+  [txtPath.."Warrior\\rend_90"] = "Rend",
+  [txtPath.."Warrior\\bstorm_90"] = "Bladestorm",
+  [txtPath.."Warrior\\whirl_90"] = "Whirlwind",
 }
 
 
