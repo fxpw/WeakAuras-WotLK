@@ -53,7 +53,13 @@ WeakAuras.StopMotion.texture_types.Shaman = {
   [txtPath.."Shaman\\spirit_wolf_90"] = "Spirit wolf",
   [txtPath.."Shaman\\vulc_totem_90"] = "Vulcano Totem",
   [txtPath.."Shaman\\water_shield_90"] = "Water shield",
+}
 
+WeakAuras.StopMotion.texture_types.Warrior = {
+  [txtPath.."Warrior\\mortal_90"] = "Mortal strike",
+  [txtPath.."Warrior\\over_90"] = "Overpower",
+  [txtPath.."Warrior\\execute_90"] = "Execute",
+  [txtPath.."Warrior\\execute2_90"] = "Execute 2",
 }
 
 
