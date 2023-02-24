@@ -67,4 +67,17 @@ WeakAuras.StopMotion.texture_types.Warrior = {
   [txtPath.."Warrior\\whirl_90"] = "Whirlwind",
 }
 
+WeakAuras.StopMotion.texture_types.Priest = {
+  [txtPath.."Priest\\dispersion_90"] = "Dispersion",
+  [txtPath.."Priest\\dplague_90"] = "Dplague",
+  [txtPath.."Priest\\invis_90"] = "Invis",
+  [txtPath.."Priest\\mindshear_90"] = "Mindshear",
+  [txtPath.."Priest\\sfiend_90"] = "Sfiend",
+  [txtPath.."Priest\\siphomana_90"] = "Siphomana",
+  [txtPath.."Priest\\stoicism_90"] = "Stoicism",
+  [txtPath.."Priest\\nyaloth_90"] = "Nyaloth",
+}
 
+WeakAuras.StopMotion.texture_types.Race = {
+  [txtPath.."Race\\LEredar"] = "LEredar",
+}
