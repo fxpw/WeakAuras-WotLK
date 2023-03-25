@@ -1682,6 +1682,21 @@ Private.texture_types["PowerAuras Words"] = {
   [PowerAurasPath.."Aura44"] = "Buff",
   ["Interface\\AddOns\\WeakAuras\\Media\\Textures\\interrupt"] = "Interrupt"
 }
+local ClassPath = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\ClassIcons\\"
+Private.texture_types["Class Icons"] = {
+  [ClassPath.."flat_dh"] = "Demon Hunter",
+  [ClassPath.."flat_dk"] = "Death Knight",
+  [ClassPath.."flat_druid"] = "Druid",
+  [ClassPath.."flat_hunter"] = "Hunter",
+  [ClassPath.."flat_mage"] = "Mage",
+  [ClassPath.."flat_monk"] = "Monk",
+  [ClassPath.."flat_paladin"] = "Paladin",
+  [ClassPath.."flat_priest"] = "Priest",
+  [ClassPath.."flat_rogue"] = "Rogue",
+  [ClassPath.."flat_shaman"] = "Shaman",
+  [ClassPath.."flat_warlock"] = "Warlock",
+  [ClassPath.."flat_warrior"] = "Warrior",
+}
 
 Private.operator_types = {
   ["=="] = "=",

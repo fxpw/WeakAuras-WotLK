@@ -147,6 +147,10 @@
         "UISpecialFrames",
         "UIDropDownMenu_Initialize",
         "ToggleDropDownMenu",
-        "UIDropDownMenu_AddButton"
+        "UIDropDownMenu_AddButton",
+        "CUSTOM",
+        "ADD",
+        "NEVER",
+        "CreateObjectPool"
     ]
 }

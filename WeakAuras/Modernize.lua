@@ -1183,10 +1183,13 @@ function Private.Modernize(data)
     end
   end
   -- in 2022 for sirus
-  if data.internalVersion < 53 then
+  if WeakAuras.IsSirusVersion() then
     data.load.use_spec = nil
     data.load.use_race = nil
-
   end
+
+  -- for k,v in pairs(data) do
+  --   print(k,v);
+  -- end
   data.internalVersion = max(data.internalVersion or 0, WeakAuras.InternalVersion());
 end
