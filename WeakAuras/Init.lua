@@ -8,7 +8,7 @@ WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "4.0.92"
+local versionString = "4.0.93"
 local buildTime = "20201210233053"
 
 WeakAuras.versionString = versionStringFromToc
@@ -26,6 +26,9 @@ end
 
 function WeakAuras.IsSirusVersion()
   return true
+end
+function WeakAuras.IsRetail()
+  return false
 end
 
 WeakAuras.prettyPrint = function(...)

@@ -1604,6 +1604,11 @@ function OptionsPrivate.OpenTriggerTemplate(data, targetId)
       WeakAuras.prettyPrint(string.format(L["Templates could not be loaded, the addon is %s"], reason));
       return;
     end
+    for k,v in pairs(OptionsPrivate.Private) do
+      if (type(v) == "table" and v.templates) then
+        print(k,v)
+      end
+    end
     frame.newView = WeakAuras.CreateTemplateView(OptionsPrivate.Private, frame);
   end
   -- This is called multiple times if a group is selected

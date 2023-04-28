@@ -300,6 +300,19 @@ local levelColors = {
   [2] = "|cFF6060FF",
   [3] = "|cFFFF4040"
 };
+function Private.validate(input, default)
+  if not input or not default then return end
+  for field, defaultValue in pairs(default) do
+    if(type(defaultValue) == "table" and type(input[field]) ~= "table") then
+      input[field] = {};
+    elseif(input[field] == nil) or (type(input[field]) ~= type(defaultValue)) then
+      input[field] = defaultValue;
+    end
+    if(type(input[field]) == "table") then
+      Private.validate(input[field], defaultValue);
+    end
+  end
+end
 
 function WeakAuras.validate(input, default)
   for field, defaultValue in pairs(default) do
