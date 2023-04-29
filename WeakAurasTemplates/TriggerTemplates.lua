@@ -1727,15 +1727,14 @@ function WeakAuras.CreateTemplateView(Private, frame)
       local classSelector = createDropdown("class", WeakAuras.class_types);
       newViewScroll:AddChild(classSelector);
 
-      if WeakAuras.IsRetail() then
-        local specSelector = createDropdown("spec", WeakAuras.spec_types_specific[newView.class]);
-        newViewScroll:AddChild(specSelector);
-        newViewScroll:AddChild(createSpacer());
-      end
-      if TemplatePrivate.triggerTemplates.class[newView.class]
-         and TemplatePrivate.triggerTemplates.class[newView.class][newView.spec]
-      then
-        createTriggerButtons(TemplatePrivate.triggerTemplates.class[newView.class][newView.spec], selectedItem);
+      -- if WeakAuras.IsRetail() then
+      --   local specSelector = createDropdown("spec", WeakAuras.spec_types_specific[newView.class]);
+      --   newViewScroll:AddChild(specSelector);
+      --   newViewScroll:AddChild(createSpacer());
+      -- end
+      -- TODO check TemplatePrivate.triggerTemplates.class[newView.class][nmewView.spec]
+      if TemplatePrivate.triggerTemplates.class[newView.class] and TemplatePrivate.triggerTemplates.class[newView.class][1] then
+        createTriggerButtons(TemplatePrivate.triggerTemplates.class[newView.class][1], selectedItem);
       end
       local classHeader = AceGUI:Create("Heading");
       classHeader:SetFullWidth(true);

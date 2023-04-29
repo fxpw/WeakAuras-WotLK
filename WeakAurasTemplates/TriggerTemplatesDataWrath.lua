@@ -680,7 +680,7 @@ templates.class.WARLOCK = {
         { spell = 19028, type = "buff", unit = "player", talent = 59}, -- Soul Link
         { spell = 20707, type = "buff", unit = "group"}, -- Soulstone
       },
-      icon = 136210
+      icon = C_Spell.GetSpellIcon(20707)
     },
     [2] = {
       title = L["Debuffs"],
@@ -1011,14 +1011,14 @@ end
 -- Warrior
 tinsert(templates.class.WARRIOR[1][8].args, {
   title = L["Stance"],
-  icon = 132349,
+  icon = rageIcon,
   triggers = {[1] = { trigger = {
     type = WeakAuras.GetTriggerCategoryFor("Stance/Form/Aura"),
     event = "Stance/Form/Aura"}}}
 })
 for j, id in ipairs({2457, 71, 2458}) do
   local title, _, icon = GetSpellInfo(id)
-  if title then
+  if title and icon then
     tinsert(templates.class.WARRIOR[1][8].args, {
       title = title,
       icon = icon,
@@ -1058,7 +1058,7 @@ tinsert(templates.class.DRUID[1][8].args, {
     type = WeakAuras.GetTriggerCategoryFor("Stance/Form/Aura"),
     event = "Stance/Form/Aura"}}}
 });
-for j, id in ipairs({5487, 768, 783, 114282, 1394966}) do
+for j, id in ipairs({5487, 768, 783}) do
   local title, _, icon = GetSpellInfo(id)
   if title then
     tinsert(templates.class.DRUID[1][8].args, {
@@ -1087,6 +1087,11 @@ end
 tinsert(templates.race.VoidElf, { spell = 316367, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
 tinsert(templates.race.VoidElf, { spell = 316368, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
 tinsert(templates.race.VoidElf, { spell = 316364, type = "buff", unit = "player", titleSuffix = L["Buff"]});
+
+tinsert(templates.race.Draenei, { spell = 316280, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Draenei, { spell = 316279, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+-- tinsert(templates.race.Draenei, { spell = 316364, type = "buff", unit = "player", titleSuffix = L["Buff"]});
+
 ------------------------------
 -- Helper code for options
 -------------------------------
@@ -1178,6 +1183,7 @@ local function handleItem(item)
   if item.form then
     item.usable = true
   end
+  -- print(waitingForItemInfo)
   return waitingForItemInfo;
 end
 
