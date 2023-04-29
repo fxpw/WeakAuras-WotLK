@@ -1290,3 +1290,4 @@ L["Show Cooldown and Buff"] = "Показывает время действия 
 L["Highlight while buffed."] = "Показывает готовность, время действия бафа и его восстановление."
 L["Show Cooldown and Check for Target"] = "Показывает время восстановления и проверку расстояния до цели"
 L["Always shows the aura, turns red when out of range."] = "Всегда показывает ауру, становится красной, когда цель вне зоны действия заклинания."
+L["Show Cooldown and Buff and Check Usable"] = "Показывает время восстановления, баф и возможность использования"
