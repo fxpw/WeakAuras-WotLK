@@ -1281,3 +1281,10 @@ L["Player Spec"] = "Текущия специализация"
 
 L["This aura plays a sound via an action."] = "Эта аура проигрывает звук при действии"
 L["This aura plays a sound via a condition."] = "Эта аура проигрывает звук при условии"
+
+L["Cooldown Tracking"] = "Отслеживание перезарядки"
+L["Always shows the aura, turns blue when not usable."] = "Всегда показывает ауру, становится синей, когда ее нельзя использовать."
+L["Show Cooldown and Duration"] = "Показывает время восстановления и продолжительность."
+L["Highlight while spell is active."] = "Выделяет заклинание пока оно активно."
+L["Show Cooldown and Buff"] = "Показывает время действия бафа"
+L["Highlight while buffed."] = "Показывает готовность, время действия бафа и его восстановление."
