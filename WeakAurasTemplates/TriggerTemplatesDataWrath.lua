@@ -22,6 +22,7 @@ local templates =
       Worgen = {},
       Queldo = {},
       VoidElf = {},
+      Goblin = {},
       DarkIronDwarf = {},
       Lightforged = {},
       Pandaren = {},
@@ -1083,13 +1084,85 @@ end
 -- Hardcoded race templates
 -------------------------------
 
--- test
-tinsert(templates.race.VoidElf, { spell = 316367, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
-tinsert(templates.race.VoidElf, { spell = 316368, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
-tinsert(templates.race.VoidElf, { spell = 316364, type = "buff", unit = "player", titleSuffix = L["Buff"]});
+tinsert(templates.race.Human, { spell = 316231, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Human, { spell = 316239, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.NightElf, { spell = 316256, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.NightElf, { spell = 316254, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Dwarf, { spell = 316246, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Dwarf, { spell = 316243, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Gnome, { spell = 317898, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Gnome, { spell = 316271, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
 
 tinsert(templates.race.Draenei, { spell = 316280, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
 tinsert(templates.race.Draenei, { spell = 316279, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Orc, { spell = 316373, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Orc, { spell = 316372, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Scourge, { spell = 316282, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Scourge, { spell = 316380, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Tauren, { spell = 316387, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Tauren, { spell = 316386, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Troll, { spell = 316407, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Troll, { spell = 316405, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.BloodElf, { spell = 316422, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.BloodElf, { spell = 316418, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.BloodElf, { spell = 316419, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.BloodElf, { spell = 316420, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.BloodElf, { spell = 316421, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Worgen, { spell = 316290, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Worgen, { spell = 316289, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Queldo, { spell = 316295, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Queldo, { spell = 316294, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Goblin, { spell = 316396, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Goblin, { spell = 316393, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.DarkIronDwarf, { spell = 316162, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.DarkIronDwarf, { spell = 316161, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Lightforged, { spell = 319321, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Lightforged, { spell = 319322, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Pandaren, { spell = 316445, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Pandaren, { spell = 316447, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Pandaren, { spell = 316443, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Vulpera, { spell = 316457, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Vulpera, { spell = 316455, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Naga, { spell = 319875, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Naga, { spell = 316413, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Nightborne, { spell = 316432, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Nightborne, { spell = 316431, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Eredar, { spell = 316466, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Eredar, { spell = 316465, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.ZandalariTroll, { spell = 319326, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.ZandalariTroll, { spell = 310810, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.Dracthyr, { spell = 320554, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.Dracthyr, { spell = 320552, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+
+tinsert(templates.race.VoidElf, { spell = 316367, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.VoidElf, { spell = 316368, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
+tinsert(templates.race.VoidElf, { spell = 316364, type = "buff", unit = "player", titleSuffix = L["Buff"]});
+tinsert(templates.race.VoidElf, { spell = 316363, type = "buff", unit = "player", titleSuffix = L["Buff"]});
+
+
+
+
+
 -- tinsert(templates.race.Draenei, { spell = 316364, type = "buff", unit = "player", titleSuffix = L["Buff"]});
 
 ------------------------------
