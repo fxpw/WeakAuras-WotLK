@@ -1697,7 +1697,7 @@ Private.texture_types["Class Icons"] = {
   [ClassPath.."flat_warlock"] = "Warlock",
   [ClassPath.."flat_warrior"] = "Warrior",
 }
-
+WeakAuras.texture_types = Private.texture_types
 Private.operator_types = {
   ["=="] = "=",
   ["~="] = "!=",
