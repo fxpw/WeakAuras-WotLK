@@ -869,19 +869,19 @@ templates.class.DEATHKNIGHT = {
         { spell = 48707, type = "buff", unit = "player"}, -- Anti-Magic Shell
         { spell = 48792, type = "buff", unit = "player"}, -- Icebound Fortitude
         { spell = 49039, type = "buff", unit = "player"}, -- Lichborne
-        { spell = 49182, type = "buff", unit = "player", talent = 21}, -- Blade Barrier
-        { spell = 49188, type = "buff", unit = "player", talent = 50}, -- Rime
-        { spell = 49200, type = "buff", unit = "player", talent = 52}, -- Acclimation
-        { spell = 50421, type = "buff", unit = "player", talent = 9}, -- Scent of Blood
-        { spell = 50447, type = "buff", unit = "player", talent = 7}, -- Bloody Vengeance
-        { spell = 50880, type = "buff", unit = "player", talent = 62}, -- Icy Talons
-        { spell = 51123, type = "buff", unit = "player", talent = 63}, -- Killing Machine
+        { spell = 49182, type = "buff", unit = "player", talent = 3}, -- Blade Barrier
+        { spell = 49188, type = "buff", unit = "player", talent = 47}, -- Rime
+        { spell = 49200, type = "buff", unit = "player", talent = 54}, -- Acclimation
+        { spell = 50421, type = "buff", unit = "player", talent = 5}, -- Scent of Blood
+        { spell = 50447, type = "buff", unit = "player", talent = 17}, -- Bloody Vengeance
+        { spell = 50880, type = "buff", unit = "player", talent = 37}, -- Icy Talons
+        { spell = 51123, type = "buff", unit = "player", talent = 40}, -- Killing Machine
         { spell = 51124, type = "buff", unit = "player"}, -- Killing Machine
         { spell = 53365, type = "buff", unit = "player"}, -- Unholy Strength
         { spell = 55233, type = "buff", unit = "player"}, -- Vampiric Blood
         { spell = 57330, type = "buff", unit = "player"}, -- Horn of Winter
         { spell = 59052, type = "buff", unit = "player"}, -- Rime
-        { spell = 66799, type = "buff", unit = "player", talent = 111}, -- Desolation
+        { spell = 66799, type = "buff", unit = "player", talent = 79}, -- Desolation
       },
       icon = C_Spell.GetSpellIcon(66799)
     },
@@ -918,12 +918,12 @@ templates.class.DEATHKNIGHT = {
         { spell = 48707, type = "ability", buff = true}, -- Anti-Magic Shell
         { spell = 48743, type = "ability"}, -- Death Pact
         { spell = 48792, type = "ability", buff = true}, -- Icebound Fortitude
-        { spell = 48982, type = "ability", talent = 4}, -- Rune Tap
-        { spell = 49005, type = "ability", debuff = true, requiresTarget = true, talent = 10}, -- Mark of Blood
-        { spell = 49016, type = "ability", buff = true, requiresTarget = true, talent = 13}, -- Unholy Frenzy
-        { spell = 49028, type = "ability", buff = true, requiresTarget = true, talent = 19}, -- Dancing Rune Weapon
-        { spell = 49039, type = "ability", buff = true, talent = 66}, -- Lichborne
-        { spell = 49143, type = "ability", requiresTarget = true, talent = 44}, -- Frost Strike
+        { spell = 48982, type = "ability", talent = 7}, -- Rune Tap
+        { spell = 49005, type = "ability", debuff = true, requiresTarget = true, talent = 15}, -- Mark of Blood
+        { spell = 49016, type = "ability", buff = true, requiresTarget = true, talent = 20}, -- Unholy Frenzy
+        { spell = 49028, type = "ability", buff = true, requiresTarget = true, talent = 29}, -- Dancing Rune Weapon
+        { spell = 49039, type = "ability", buff = true, talent = 37}, -- Lichborne
+        { spell = 49143, type = "ability", requiresTarget = true, talent = 55}, -- Frost Strike
         { spell = 49158, type = "ability", talent = 87}, -- Corpse Explosion
         { spell = 49184, type = "ability", requiresTarget = true, talent = 48}, -- Howling Blast
         { spell = 49203, type = "ability", debuff = true, talent = 54}, -- Hungering Cold
@@ -931,6 +931,7 @@ templates.class.DEATHKNIGHT = {
         { spell = 61999, type = "ability"}, -- Raise Ally
         { spell = 63560, type = "ability", unit = "pet", buff = true, talent = 105}, -- Ghoul Frenzy
         { spell = 66198, type = "ability", requiresTarget = true}, -- Obliterate
+        { spell = 322772, type = "ability",requiresTarget = true, talent = 16}, -- sirus new bdk spell
       },
       icon = C_Spell.GetSpellIcon(66198)
     },
@@ -1083,6 +1084,28 @@ end
 ------------------------------
 -- Hardcoded race templates
 -------------------------------
+-- Human = {},
+-- NightElf = {},
+-- Dwarf = {},
+-- Gnome = {},
+-- Draenei = {},
+-- Orc = {},
+-- Scourge = {},
+-- Tauren = {},
+-- Troll = {},
+-- BloodElf = {},
+-- Worgen = {},
+-- Queldo = {},
+-- VoidElf = {},
+-- DarkIronDwarf = {},
+-- Lightforged = {},
+-- Pandaren = {},
+-- Vulpera = {},
+-- Naga = {},
+-- Nightborne = {},
+-- Eredar = {},
+-- ZandalariTroll = {},
+-- Dracthyr = {},
 
 tinsert(templates.race.Human, { spell = 316231, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
 tinsert(templates.race.Human, { spell = 316239, type = "ability", buff = true, titleSuffix = L["Cooldown"]});
