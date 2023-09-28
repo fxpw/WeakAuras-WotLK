@@ -1731,30 +1731,11 @@ local function Tanks_CLEU(self,...)
 			blockChance = GetBlockChance()
 			parryChance = GetParryChance()
 		end
-		local absorb = (blockChance+parryChance*4) * blockValue
+		local absorb = (( blockChance + parryChance) * 4) * blockChance
 		if absorb > 32500 then
 			absorb = 32500
 		end
-		if time2 and lastPalAbsorbTable[whoguid4] and lastPalAbsorbTable[whoguid4][1] and (time2 - lastPalAbsorbTable[whoguid4][1] <= 2) then
-			-- local absorb = ((spelldmg13*2)*((150+dodge*3+parry*3)/100))
-			if absorb > 32500 then
-				absorb = 32500
-			end
-            lastPalAbsorbTable[whoguid4][2] = lastPalAbsorbTable[whoguid4][2] + absorb
-            if lastPalAbsorbTable[whoguid4][2] > 32500 then
-                lastPalAbsorbTable[whoguid4][2] = 32500
-            end
-        else
-			lastPalAbsorbTable[whoguid4][1] = time2
-            lastPalAbsorbTable[whoguid4][2] = 0
-			if absorb > 32500 then
-				absorb = 32500
-			end
-            lastPalAbsorbTable[whoguid4][2] = lastPalAbsorbTable[whoguid4][2] + absorb
-            if lastPalAbsorbTable[whoguid4][2] > 32500 then
-                lastPalAbsorbTable[whoguid4][2] = 32500
-            end
-        end
+		lastPalAbsorbTable[whoguid4][2] = absorb
 	elseif csarm[subevent3] and spellid10 == 308125 then
 		lastDkAbsorbTable[whoguid4] = 0
 	elseif sh[subevent3] then
