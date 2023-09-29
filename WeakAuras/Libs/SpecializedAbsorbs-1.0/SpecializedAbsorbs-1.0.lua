@@ -1731,7 +1731,7 @@ local function Tanks_CLEU(self,...)
 			blockChance = GetBlockChance()
 			parryChance = GetParryChance()
 		end
-		local absorb = (( blockChance + parryChance) * 4) * blockChance
+		local absorb = (((blockChance-5)/100+(parryChance-12)/100)*4)* blockValue
 		if absorb > 32500 then
 			absorb = 32500
 		end
