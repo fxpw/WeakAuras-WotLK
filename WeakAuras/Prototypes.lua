@@ -861,6 +861,15 @@ Private.load_prototype = {
       events = {"PARTY_MEMBERS_CHANGED","RAID_ROSTER_UPDATE"}
     },
     {
+      name = "constellation",
+      display = L["Player Сonstellation"],
+      type = "multiselect",
+      values = "constellation_type",
+      init = "arg",
+      width = WeakAuras.normalWidth,
+      events = {"PARTY_MEMBERS_CHANGED","RAID_ROSTER_UPDATE"}
+    },
+    {
       name = "talent",
       display = L["Talent"],
       type = "multiselect",

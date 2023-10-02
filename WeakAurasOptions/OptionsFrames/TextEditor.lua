@@ -157,7 +157,101 @@ function(...)
    end
 end]=]
   },
+  {
+    name = "Clickable Button",
+    snippet = [=[
+      aura_env.button = aura_env.button or CreateFrame("Button", nil, aura_env.region)  
+      aura_env.button:SetAllPoints()
+      aura_env.button:SetScript("OnClick", function(self, click)
+        -- code on click
+      end)
+      aura_env.button:SetScript("OnEnter",function(self)
+        -- code on miuseover button
+        GameTooltip:SetOwner(self, 'ANCHOR_RIGHT')
+        GameTooltip:AddLine("Onclick")
+        GameTooltip:Show()
+      end)
+      aura_env.button:SetScript("OnLeave",function(self)
+        -- code on leave button
+        GameTooltip:Hide()
+      end)
+    ]=]
+  },
+  {
+    name = "TSU constructor",
+    snippet = [=[
+      --[[
+Args:
+► allstates - this will be the first arg of your trigger. Just pass it straight through to this function.
+► ID - Unique ID for this clone. (could be a name, a number, a unitID, spellID etc.)
+
+(Everything after here is, strictly speaking, optional. In practice you will want to send some info)
+► index - string or number - sets the display order of your outpus. 
+► name - string - for %n etc.
+► progType - string - Progress type. Send the string "timed" or "static"
+► prog1 - number - duration for timed, value for static
+► prog2 - number - expirationTime for timed, total for static.
+► stacks - number
+► icon  - iconID or texture path
+► texture - texture path
+
+► args... - you can add extra args to the end if you want to have any other info stored with the clone and available throughout the WA. They will be under the key state.arg# where "#" is how many args after the last defined arg it is. This can be useful for things like sending class, player name, spellID, etc.                 ]]
+
+aura_env.TSU = function(allstates, ID, index, name, progType, prog1, prog2, stacks, icon, texture, ...)
+    allstates[ID] = allstates[ID] or {};
+    local state = allstates[ID];
+    state.show = true;
+    state.changed = true;
+    state.autoHide = true;
+    state.index = index or ID
+    state.resort = true
+    state.name = name or "";
+    state.progressType = progType == "timed" and "timed" or "static";
+    state.value = prog1 or 1;
+    state.duration = prog1 or 1;
+    state.total = prog2 or 1;
+    state.expirationTime = prog2 or 1;
+    state.stacks = stacks or 1;
+    state.icon = icon or 134400;
+    state.texture = texture or "Interface\\Icons\\INV_Misc_QuestionMark";
+    if select("#", ...) > 0 then
+        for i = 1,select("#", ...) do
+            local id = "arg"..i
+            local arg = select(i , ...)
+            state[id] = arg
+        end
+    end
+end
+--If you're running the function above repeatedly (every frame etc.) and want states to be removed when they would no longer be created then run this function before the main one.
+  --e.g. If you've got states showing auras then you would need to run this to accurately show changes to their durations or if they've been dispelled/removed.
+  aura_env.clearAllTSU = function(allstates)
+      for _, v in pairs(allstates) do
+          v.show = false;
+          v.changed = true;
+      end
+  end
+    ]=]
+  },
+  {
+    name = "Create UnitFrame",
+    snippet = [=[
+      local f = CreateFrame("Button", "name", UIParent, "SecureUnitButtonTemplate")
+      f:SetAttribute("unit", "player") -- or whatever unit you're making
+      f:EnableMouse(true)
+      f:SetSize(100, 20) -- width 100, height 20
+      f:SetAllPoints(WeakAuras.regions[aura_env.id].region)
+      f:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+      f:SetAttribute("type1", "target") -- Left click targets unit
+      f:SetAttribute("type2", "togglemenu") -- Right click opens the context menu
+    ]=]
+  },
 }
+
+
+
+
+
+
 
 local function ConstructTextEditor(frame)
   local group = AceGUI:Create("WeakAurasInlineGroup")

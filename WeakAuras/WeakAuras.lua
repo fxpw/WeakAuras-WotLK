@@ -1278,6 +1278,7 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
   local raidRole = WeakAuras.RaidRole()
   local race = WeakAuras.GetUnitRace()
   local spec = WeakAuras.GetCurrentSpec()
+  local constellation = WeakAuras.GetCurrentConstellation()
   local changed = 0;
   local shouldBeLoaded, couldBeLoaded;
   local parentsToCheck = {}
@@ -1289,8 +1290,8 @@ local function scanForLoadsImpl(toCheck, event, arg1, ...)
     if (data and not data.controlledChildren) then
       local loadFunc = loadFuncs[id];
       local loadOpt = loadFuncsForOptions[id];
-      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
-      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
+      shouldBeLoaded = loadFunc and loadFunc("ScanForLoads_Auras", inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, constellation, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
+      couldBeLoaded =  loadOpt and loadOpt("ScanForLoads_Auras",   inCombat, alive, pvp, vehicle, vehicleUi, group, player, realm, class, race, constellation, spec, faction, playerLevel, zone, zoneId, size, difficulty, raidRole);
 
       if(shouldBeLoaded and not loaded[id]) then
         changed = changed + 1;
@@ -3304,7 +3305,7 @@ function Private.FixGroupChildrenOrderForGroup(data)
   if data.parent == nil then
     for child in Private.TraverseAll(data) do
       SetFrameLevel(child.id, frameLevel);
-      frameLevel = frameLevel + 0;
+      frameLevel = frameLevel + 1;
     end
   end
 end
@@ -4800,6 +4801,46 @@ function WeakAuras.GetUnitRace()
 end
 function WeakAuras.GetCurrentSpec()
   return "Spec"..C_Talent.GetSpecInfoCache().activeTalentGroup
+end
+local ConstellationTable = {
+  [371788] = true,
+  [371789] = true,
+  [371790] = true,
+  [371791] = true,
+  [371792] = true,
+  [371793] = true,
+  [371794] = true,
+  [371795] = true,
+  [371796] = true,
+  [371797] = true,
+  [371798] = true,
+  [371799] = true,
+  [371800] = true,
+  [371801] = true,
+  [371802] = true,
+  [371803] = true,
+  [371804] = true,
+  [371805] = true,
+  [371806] = true,
+  [371807] = true,
+  [371808] = true,
+  [371809] = true,
+  [371810] = true,
+}
+
+function WeakAuras.GetCurrentConstellation()
+  local i = 1
+  while true do
+    local name, _, icon, count, _, duration, expirationTime, unitCaster, _, _, spellId = UnitDebuff("player", i)
+    if not name then
+        break -- no more buffs to check
+    end
+    if(ConstellationTable[spellId]) then
+      return spellId
+    end
+    i = i+1
+  end
+  return nil
 end
 do
   local function shouldInclude(data, includeGroups, includeLeafs)
