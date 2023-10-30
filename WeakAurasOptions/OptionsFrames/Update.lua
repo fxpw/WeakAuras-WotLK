@@ -1412,6 +1412,8 @@ local methods = {
     end
 
     if (#scamCheckResult > 0) then
+      -- enable error notification to avoid embedding bad auras
+      ConsoleExec("scriptErrors 1")
       self.viewCodeButton:Show()
     else
       self.viewCodeButton:Hide()
