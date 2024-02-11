@@ -3,5 +3,5 @@
 ## LoadOnDemand: 1
 ## SavedVariables: WeakAurasArchive
 ## Dependencies: WeakAuras
-
+## X-Sirus-Update: https://github.com/fxpw/WeakAuras-Sirus.su/tree/master/WeakAurasArchive
 WeakAurasArchive.lua

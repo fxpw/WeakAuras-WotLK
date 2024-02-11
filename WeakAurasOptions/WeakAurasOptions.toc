@@ -13,7 +13,7 @@
 ## LoadOnDemand: 1
 ## Dependencies: WeakAuras
 ## SavedVariables: WeakAurasOptionsSaved
-
+## X-Sirus-Update: https://github.com/fxpw/WeakAuras-Sirus.su/tree/master/WeakAurasOptions
 locales.xml
 
 ForAllIndentsAndPurposes.lua

@@ -12,5 +12,6 @@
 ## DefaultState: Enabled
 ## LoadOnDemand: 1
 ## Dependencies: WeakAuras, WeakAurasOptions
+## X-Sirus-Update: https://github.com/fxpw/WeakAuras-Sirus.su/tree/master/WeakAurasModelPaths
 
 ModelPaths.lua

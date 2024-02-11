@@ -16,7 +16,7 @@
 ## LoadOnDemand: 0
 ## SavedVariables: WeakAurasSaved
 ## OptionalDeps: Ace3, LibCompress-WA, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, Masque, GTFO, LibButtonGlow-1.0, LibSpellRange-1.0, LibRangeCheck-2.0, LibDBIcon-1.0, LibClassicDurations, LibClassicCasterino, LibGetFrame-1.0
-
+## X-Sirus-Update: https://github.com/fxpw/WeakAuras-Sirus.su/tree/master/WeakAuras
 compat.lua
 Pools.lua
 
