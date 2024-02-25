@@ -22,6 +22,7 @@
   <Include file="Libs\Archivist\Archivist.xml"/>
   <Include file="Libs\LibSerialize\lib.xml"/>
   <Include file="Libs\LibTalentQuery-1.0\lib.xml"/>
-	<Include file="Libs\LibGroupTalents-1.0\lib.xml"/>
+  <Include file="Libs\LibGroupTalents-1.0\lib.xml"/>
+  <Script file="Libs\SpecializedAbsorbs-1.0\SpecializedAbsorbs-1.0.lua"/>
 
 </Ui>

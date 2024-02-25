@@ -39,9 +39,9 @@ else
 	local events = Core.Events
 	frame:SetScript("OnEvent", function(self, event, ...) events[event](...) end)
 	Core.Frame = frame
-	LibStub("AceComm-3.0"):Embed(Core)
-	LibStub("AceTimer-3.0"):Embed(Core)
-	LibStub("AceSerializer-3.0"):Embed(Core)
+	LibStub("AceComm-3.0-WA"):Embed(Core)
+	LibStub("AceTimer-3.0-WA"):Embed(Core)
+	LibStub("AceSerializer-3.0-WA"):Embed(Core)
 end
 
 ---------------------
