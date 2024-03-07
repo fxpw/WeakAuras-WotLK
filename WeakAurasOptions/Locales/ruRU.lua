@@ -244,7 +244,7 @@ Off Screen]=] ] = [=[Индикация за
 	L["Bottom Left"] = "Снизу слева"
 	L["Bottom Right"] = "Снизу справа"
 	L["Bracket Matching"] = "Закрывать скобки"
-	L["Browse Wago, the largest collection of auras."] = "Просматривайте Wago - ресурс с крупнейшей коллекцией индикаций."
+	L["Browse Wago, the largest collection of auras."] = "Крупная коллекция индикаций на все случаи жизни в дискорде:"
 	L["Can be a Name or a Unit ID (e.g. party1). A name only works on friendly players in your group."] = "Введите имя или идентификатор единицы (Unit ID). Имена работают только для игроков, находящихся в вашей группе."
 	L["Can be a UID (e.g., party1)."] = [=[Введите идентификатор единицы (UID, Unit ID).
 Например: party4, raid7, arena3, boss2, nameplate6, target, focus, pet и др.]=]
@@ -543,7 +543,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Is Stealable"] = "Может быть украден"
 	L["Justify"] = "Выравнивание"
 	L["Keep Aspect Ratio"] = "Сохранять пропорции"
-	L["Keep your Wago imports up to date with the Companion App."] = "Поддерживайте ваши индикации с Wago в актуальном состоянии при помощи приложения Companion."
+	L["Keep your Wago imports up to date with the Companion App."] = "Поддерживайте ваши индикации в актуальном состоянии:"
 	L["Large Input"] = "Многострочное поле ввода"
 	L["Leaf"] = "Лист"
 	L["Left"] = "Слева"
@@ -679,7 +679,7 @@ UNIT_POWER  UNIT_AURA, PLAYER_TARGET_CHANGED]=]
 	L["Rename"] = "Переименовать"
 	L["Repeat After"] = "Повторять после"
 	L["Repeat every"] = "Повторять каждые"
-	L["Report bugs on our issue tracker."] = "Сообщите об ошибках на наш баг-трекер."
+	L["Report bugs on our issue tracker."] = "Заводите баг-репорты в соответствующем разделе дискорда:"
 	L["Require unit from trigger"] = "Требуется единица от триггера"
 	L["Required for Activation"] = "Необходимо для активации"
 	L["Reset all options to their default values."] = "Возвращает всем параметрам значения по умолчанию, заданные автором."
