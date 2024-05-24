@@ -217,21 +217,11 @@ function ConstructTest(trigger, arg)
       -- if (type(trigger[name]) == "table") or type(trigger[name.."_operator"]) == "table" then
         -- 3.4.0 auras fix
         if (type(trigger[name]) == "table") then
-          -- for k,v in pairs(trigger[name]) do
-          --   print(k,v)
-          -- end
           trigger[name] = trigger[name][1] or "error";
         end
         if (type(trigger[name.."_operator"]) == "table") then
-          -- for k,v in pairs(trigger[name.."_operator"]) do
-          --   print(k,v)
-          -- end
-          trigger[name.."_operator"] =trigger[name.."_operator"][1] or "error";
+          trigger[name.."_operator"] = trigger[name.."_operator"][1] or "error";
         end
-        -- trigger[name] = "error";
-        -- trigger[name.."_operator"] = "error";
-      -- end
-      -- number
       test = "(".. name .." and "..name..(trigger[name.."_operator"] or "==")..(number or ("\""..(trigger[name])) or ("".."\""))..")";
     end
   end
